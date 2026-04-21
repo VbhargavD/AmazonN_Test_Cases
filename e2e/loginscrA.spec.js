@@ -13,10 +13,10 @@ test.describe('verifyAmazonLogin', () => {
 
    )
 
-   test('amazon login', async ({ page }) => {
+   test.only('amazon login', async ({ page }) => {
       await page.goto("https://www.amazon.in/")
       await page.waitForTimeout(2000)
-      
+
 
       const hMverify = new loginScreen(page);
 
