@@ -14,7 +14,7 @@ test.describe('verifyAmazonLogin', () => {
 
    )
 
-   test.only('amazon login', async ({ page }) => {
+   test('amazon login', async ({ page }) => {
       await page.goto("https://www.amazon.in/")
       await page.waitForTimeout(2000)
 
