@@ -3,7 +3,7 @@ import { expect } from '@playwright/test'
 export class loginScreen {
 
     constructor(page) {
-        this.signinmove = page.getByRole('lin', { name: 'Hello, sign in Account & Lists' })
+        this.signinmove = page.getByRole('link', { name: 'Hello, sign in Account & Lists' })
         this.clicksign = page.getByRole('link', { name: 'Sign in', exact: true })
         this.emailfill = page.locator('#ap_email_login')
         this.continuebt = page.getByRole('button', { name: 'Continue' })
