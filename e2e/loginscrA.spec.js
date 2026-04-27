@@ -1,5 +1,10 @@
 import { test, expect } from '@playwright/test'
 import { loginScreen } from '../pages/login'
+import fs from 'fs'
+
+const filePath = "testData/cred.json"
+
+const data = JSON.parse(fs.readFileSync(filePath, 'utf-8'))
 
 test.describe('verifyAmazonLogin', () => {
 
