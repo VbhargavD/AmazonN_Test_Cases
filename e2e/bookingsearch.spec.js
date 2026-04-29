@@ -10,7 +10,7 @@ test.describe('bookingSearchValidation', () => {
         const bSearch = new bookingsearch(page)
         await bSearch.dismisspopup()
         await bSearch.enterdestination('hyderabad')
-        await bSearch.selectdates('Su 26 April', 'Tu 28 April')
+        await bSearch.selectdates('Th 14 May 2026', 'Fr 15 May 2026')
         await bSearch.configureoccupancy()
         await bSearch.clicksearch()
     })
